@@ -1,0 +1,13 @@
+{
+  "name": "adorwms-visualization",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["server", "client"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
